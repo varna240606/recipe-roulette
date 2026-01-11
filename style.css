@@ -1,0 +1,226 @@
+/* Import Poppins font (optional, but recommended for the new font) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Fun, modern font */
+    text-align: center; /* Center all text */
+    margin: 20px;
+    background: linear-gradient(135deg, #ffe6f0 0%, #e6f7ff 100%); /* Pastel pink to blue gradient background */
+    color: #4a4a4a; /* Soft dark gray for text */
+    min-height: 100vh; /* Full height for gradient */
+}
+
+nav {
+    margin-bottom: 20px;
+    background-color: #f0e6ff; /* Light pastel purple background */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #ff6b9d; /* Pastel pink for links */
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4ecdc4; /* Bright teal on hover for colorfulness */
+}
+
+h1, h2, h3 {
+    color: #ff9f43; /* Warm pastel orange for headings */
+    font-weight: 600;
+}
+
+p, ul, ol, li {
+    text-align: center; /* Ensure lists and paragraphs are centered */
+    color: #4a4a4a;
+}
+
+ul, ol {
+    display: inline-block; /* Center lists horizontally */
+    text-align: left; /* But keep list items left-aligned for readability */
+}
+
+form {
+    background-color: #fff5e6; /* Light pastel yellow background for form */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 20px auto;
+}
+
+label {
+    color: #6c5ce7; /* Soft purple for labels */
+    font-weight: 600;
+}
+
+input[type="text"], input[type="checkbox"] {
+    margin: 10px 0;
+    padding: 8px;
+    border: 2px solid #ffeaa7; /* Pastel yellow border */
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+button {
+    background-color: #a8e6cf; /* Pastel green for button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #81ecec; /* Brighter teal on hover */
+}
+
+#roulette {
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border: 5px solid #ffeaa7; /* Pastel yellow border for color */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: spin 2s linear infinite;
+    background-color: #f7dc6f; /* Light yellow background for the wheel */
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+#wheel {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e74c3c; /* Bright red for "Spinning..." text */
+}
+
+#result {
+    background-color: #d5f4e6; /* Pastel green background for result */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+
+
+a {
+    color: #ff6b9d; /* Pastel pink for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #4ecdc4; /* Teal on hover */
+}
+
+/* ===== GLOBAL STYLES ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #fff1f7, #eef6ff);
+    color: #444;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    background-color: #f3e8ff;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #a855f7;
+}
+
+nav a:hover {
+    color: #06b6d4;
+}
+
+/* ===== HEADINGS ===== */
+h1 {
+    color: #fb7185;
+    font-size: 36px;
+}
+
+h2 {
+    color: #f97316;
+}
+
+h3 {
+    color: #22c55e;
+}
+
+/* ===== RESULT CARD ===== */
+#result {
+    background-color: #ecfeff;
+    padding: 25px;
+    border-radius: 18px;
+    max-width: 650px;
+    margin: 20px auto;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+/* ===== LISTS ===== */
+ul, ol {
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+li {
+    margin: 6px 0;
+}
+
+/* ===== IMAGE ===== */
+
+
+/* ===== BUTTON ===== */
+button {
+    background-color: #86efac;
+    color: #065f46;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #34d399;
+    transform: scale(1.05);
+}
+
+/* ===== LINKS ===== */
+a {
+    color: #ec4899;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #0ea5e9;
+    text-decoration: underline;
+}

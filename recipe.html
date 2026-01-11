@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Indian Recipe Roulette Result</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="/home">Home</a> | <a href="/about">About</a> | <a href="/">Start Roulette</a>
+    </nav>
+    <h1>Indian Recipe Roulette Result</h1>
+    {% if recipe %}
+        <div id="result">
+
+    <h1>Indian Recipe Roulette Result</h1>
+
+    <h2>{{ name }}</h2>
+
+    
+
+    <h3>Ingredients:</h3>
+    <ul>
+        {% for item in recipe.ingredients %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>Steps:</h3>
+    <ol>
+        {% for step in recipe.steps %}
+        <li>{{ step }}</li>
+        {% endfor %}
+    </ol>
+
+    <h3>Dietary:</h3>
+    <p>{{ recipe.dietary | join(', ') }}</p>
+
+    <a href="/">Try Again</a>
+
+            </div>
+  
+        <script>
+            // Simple spin animation: Hide wheel after 2 seconds and show result
+            setTimeout(() => {
+                document.getElementById('roulette').style.display = 'none';
+                document.getElementById('result').style.display = 'block';
+            }, 2000);
+        </script>
+    {% else %}
+        <p>{{ message }}</p>
+    {% endif %}
+  
+</body>
+</html>
